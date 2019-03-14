@@ -10,5 +10,5 @@ package hundirflota;
  * @author josea
  */
 public class Barco {
-    
+    private ArrayList<Barco> listaBarcos;
 }

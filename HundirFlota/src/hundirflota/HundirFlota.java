@@ -32,8 +32,29 @@ public class HundirFlota {
             opcion = sc.nextInt();
             switch(opcion){
                 case(1):{
-                    crearJugador();
+                    Jugador jug = new Jugador();
+                    jug.crearJugador();
+                    listaJugadores.add(jug);
+                    break;
                 }
+                case(2):{
+                    Tablero propio = new Tablero();
+                    Barco barcos = new Barco();
+                    break;
+                }
+                case(3):{
+                    inicializarJuego();
+                    break;
+                }
+                case(4):{
+                    salir=true;
+                    break;
+                }
+                default:{
+                    System.out.println("Escoje una de las opciones comprendidas"
+                            + "en el menú, gracias");
+                }
+                            
             }
     }
     
